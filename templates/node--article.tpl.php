@@ -2,8 +2,8 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <?php else : ?>
 	<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix thumbnail"<?php print $attributes; ?>>
+ <div id="barrAnime">
 <?php endif ; ?>
-
 
   <header>
     <?php print render($title_prefix); ?>
@@ -22,13 +22,15 @@
     print render($content);
   ?>
 
-  <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
+  <?php if (!empty($content['field_tags']) || !empty($content['links'])) : ?>
     <footer>
       <?php print render($content['field_tags']); ?>
       <?php // print render($content['links']); ?>
     </footer>
-  <?php endif; ?>
+  <?php endif ; ?>
 
   <?php print render($content['comments']); ?>
-
+  <?php if ($variables['view_mode'] == 'teaser') : ?>
+  </div>
+  <?php endif ; ?>
 </article> <!-- /.node -->

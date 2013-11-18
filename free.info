@@ -15,6 +15,7 @@ regions[footer]         = 'Footer'
 
 ; Stylesheets
 stylesheets[all][] = css/style.css
+scripts[] = js/barranim.js
 
 ;**********************************
 ; METHOD 1: Bootstrap Source Files
