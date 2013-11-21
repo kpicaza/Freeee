@@ -224,13 +224,14 @@ dd {
 .thumbnail .field-name-title a{
 	color:#38637c;
 }
-.thumbnail .field-name-title a:hover{
+.node-recursos.node-teaser .field-name-title a:hover, .thumbnail .field-name-title a:hover{
 	color:#333333;
 }
 .thumbnail .field-name-title .field-items{
 	position:absolute;
 	left:25%;
 }
+.node-recursos.thumbnail .field-name-sello .field-items span.bolumen1,
 .thumbnail .field-name-sello .field-items span.bolumen1{
 	position:absolute;
 	top:75px;
@@ -247,6 +248,10 @@ dd {
 	border-style: inset;
 	
 }
+.node-recursos.thumbnail .field-name-sello .field-items span.bolumen1{
+	border-color: transparent #570602 transparent transparent;
+	_border-color: #000000 #570602 #000000 #000000;
+}
 .thumbnail .field-name-sello .field-items span.sello-article{
 	position:absolute;
 	top:30px;
@@ -261,6 +266,21 @@ dd {
 	background:#49afcd linear-gradient(top, #5bc0de, #38637c); url(../img/pluma.png) repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff38637c', GradientType=0);
 }
+.thumbnail .field-name-sello .field-items span.sello-recursos{
+	position:absolute;
+	top:30px;
+	left:-8px;
+	z-index:2;
+	width:45px;
+	height:45px;
+	background:#49afcd -moz-linear-gradient(top, #f3a6a2, #ca322c); url(../img/llave.png) repeat-x;
+	background:#49afcd -webkit-gradient(linear, 0 0, 0 100%, from(#f3a6a2), to(#ca322c)); url(../img/pluma.png) repeat-x;
+	background:#49afcd -webkit-linear-gradient(top, #f3a6a2, #ca322c); url(../img/llave.png) repeat-x;
+	background:#49afcd -o-linear-gradient(top, #f3a6a2, #ca322c); url(../img/llave.png) repeat-x;
+	background:#49afcd linear-gradient(top, #f3a6a2, #ca322c); url(../img/llave.png) repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3a6a2', endColorstr='#ffca322c', GradientType=0);
+}
+.thumbnail .field-name-sello .field-items span.recursos,
 .thumbnail .field-name-sello .field-items span.article{
 	position:absolute;
 	top:30px;
@@ -270,8 +290,17 @@ dd {
 	height:45px;
 	background:url(../img/pluma.png) no-repeat
 }
+.thumbnail .field-name-sello .field-items span.recursos{
+	background:url(../img/llave.png) no-repeat
+}
 .thumbnail .field-name-sello .field-items span p{
 	display:none;
+}
+.node-recursos.thumbnail .field-name-title{
+	border-bottom:5px solid #ca322c;
+} 
+.node-recursos.thumbnail .field-name-title a{
+	color:#ca322c;
 }
 /*******************************
  *	Article
@@ -302,7 +331,10 @@ dd {
 	font-size:16px;
 	font-weight:bold;
 }
-.node-teaser .field-name-field-tipo a:hover{
+.node-recursos.node-teaser .field-name-field-tipo a:link, .node-recursos.node-teaser .field-name-field-tipo a:visited{
+	color:#ca322c;
+}
+.node-recursos.node-teaser .field-name-field-tipo a:hover, .node-teaser .field-name-field-tipo a:hover{
 	color:#333333;
 }
 .node-teaser .field-name-post-date{
@@ -316,6 +348,16 @@ dd {
 	margin-right:.5em;
 	margin-top:0;
 	clear:none;
+}
+/********************************
+ * Temas
+ ********************************/
+.bef-select-as-links .form-type-bef-link{
+	float:left;
+	margin-left:.8em;
+}
+.bef-select-as-links .form-type-bef-link#edit-type-all{
+	margin-left:0;
 }
 /********************************
  * Footer
